@@ -181,6 +181,16 @@ nav ul li a:hover{
 .tab-contents {
     display: none;
 }
+.btn3{
+    /* display: inline-block; */
+    font-size: 10px;
+    margin: 5px;
+    padding: 2px;
+    background-color: #ff004f;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
 
 .tab-contents.active-tab {
     display: block;
