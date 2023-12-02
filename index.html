@@ -49,7 +49,8 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Please select from one of the given options(Skills, Experience, Education) in the below to Know about me.</p>
+                    <p>Please select from one of the given options(Skills, Experience, Education) in the below to Know
+                        about me.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -65,23 +66,37 @@
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>Duck-University (Coursera)-1</span><br>(web development certificate for working on Green Screen web-page)</li><br>
-                            <li><span>Duck-University (Coursera)-2</span><br>(basic knowledge of web-development, HTML, CSS and JavaScript)</li><br>
-                            <li><span>University of Michigan(Coursera)</span><br>(Basic Knowledge of Python)</li><br>
-                            <li><span>SKILLIGENCE (Microsoft)</span><br>(Android App Development with Java)</li><br>
-                            <li><span>WAC-(IIT Kharagpur)</span><br>(Android App Development Workshop)</li><br>
+                            <li><span>Duck-University (Coursera)-1</span><br>(web development certificate for working on
+                                Green Screen web-page) <a href="CV/certificate  for webdevalopment .pdf" download
+                                    class="btn3">Download Certificate</a></li><br>
+                            <li><span>Duck-University (Coursera)-2</span><br>(basic knowledge of web-development, HTML,
+                                CSS and JavaScript) <a href="CV/Certificate (javascript and css) Coursera.pdf" download
+                                    class="btn3">Download Certificate</a></li><br>
+                            <li><span>University of Michigan(Coursera)</span><br>(Basic Knowledge of Python) <a
+                                    href="CV/Certificate (python)Coursera.pdf" download class="btn3">Download
+                                    Certificate</a></li><br>
+                            <li><span>SKILLIGENCE (Microsoft)</span><br>(Android App Development with Java) <a
+                                    href="CV/Harsh Appreciation Letter.pdf" download class="btn3">Download
+                                    Certificate</a></li><br>
+                            <li><span>WAC-(IIT Kharagpur)</span><br>(Android App Development Workshop) <a
+                                    href="CV/IIT KHADAKPUR certificate.jpg" download class="btn3">Download
+                                    Certificate</a></li><br>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>06/2019 - 06/2023</span><br><b style="color: #ff004f;">Inderprastha Engineering College, Ghaziabad </b><br>B.Tech.(Computer Science Engineering)<br><b>CGPA :</b> 7.25</li><br>
-                            <li><span>2017 - 2019</span><br><b style=" color: #ff004f;">Calcutta Public School (Intermediate)</b><br>Computer Science(PCM)</li><br>
-                            <li><span>2015 - 2017</span><br><b style="color: #ff004f;">Calcutta Public School (High School)</b><br>Computer Science(PCM)</li>
+                            <li><span>06/2019 - 06/2023</span><br><b style="color: #ff004f;">Inderprastha Engineering
+                                    College, Ghaziabad </b><br>B.Tech.(Computer Science Engineering)<br><b>CGPA :</b>
+                                7.27</li><br>
+                            <li><span>2017 - 2019</span><br><b style=" color: #ff004f;">Calcutta Public School
+                                    (Intermediate)</b><br>Computer Science(PCM)</li><br>
+                            <li><span>2015 - 2017</span><br><b style="color: #ff004f;">Calcutta Public School (High
+                                    School)</b><br>Computer Science(PCM)</li>
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>l̥
+        </div>l̥l̥
     </div>
 
     <!-- ----------------services---------------------- -->
@@ -105,7 +120,9 @@
                 <div>
                     <i class="fa-brands fa-android"></i>
                     <h2>App Design</h2>
-                    <p>“Mobile is becoming not only the new digital hub, but also the bridge to the physical world. That’s why mobile will affect more than just your digital operations — it will transform your entire business.”</p>
+                    <p>“Mobile is becoming not only the new digital hub, but also the bridge to the physical world.
+                        That’s why mobile will affect more than just your digital operations — it will transform your
+                        entire business.”</p>
                     <a href="#">learn more</a>
                 </div>
             </div>
@@ -164,7 +181,16 @@
                         <a href="#"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></a>
                         <a href="#"><i class="fa-brands fa-github" style="color: #4078c0;"></i></a>
                     </div>
-                    <a href="CV/HARSH's Resume.pdf" download class="btn btn2">Download CV</a>
+                    <br>
+                    <!-- <form onsubmit="return passcheck()"> -->
+                        <!-- <div class="error-text">
+                            <span>Enter Password :</span>
+                            <input type="password" class="css-input" required id="pass1"> -->
+                            
+                        <a href="CV/HARSH's Resume.pdf" download class="btn btn2">Download CV</a><br>
+                        <span><b>Note:</b> This pdf is password protectd please contact with HARSH....  <i class="fa-solid fa-hand-point-right fa-beat-fade" style="color: #ff004f;"></i></span>
+                        <!-- </div> -->
+                    <!-- </form> -->
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -208,7 +234,7 @@
     </script>
 
     <!-- --------------------------Contact-form---------------------- -->
-    
+
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzwMh4DOxA2uiDuHntYx96mcjW_N5BOKhagmKmRq-Cv0bjgSvsPHVLHsOhYlOciTu5Y/exec'
         const form = document.forms['submit-to-google-sheet']
@@ -219,14 +245,32 @@
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
                     msg.innerHTML = "Message sent successfully"
-                    setTimeout(function(){
+                    setTimeout(function () {
                         msg.innerHTML = ""
-                    },5000)
+                    }, 5000)
                     form.reset()
                 })
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
+
+    <!-- -------------------Password--------------------- -->
+
+    <!-- <script>
+        const errorText = document.querySelector(".error-text")
+        var Password="1234";
+        function passcheck(){
+            if(document.getElementById('psss1').value!=Password){
+                errorText.style.display = "block";
+                errorText.textContent = "ERROR! Password Not Match.";
+                return false;
+            }
+            if(document.getElementById('pass1').value == Password){
+                window.open("https://www.google.com","_blank");
+            }
+        }
+    </script> -->
+
 </body>
 
 </html>
